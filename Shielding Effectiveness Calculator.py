@@ -20,7 +20,7 @@ def wave(f):
     """calculates wavelenght in meters"""
     wl = 299792458 / f
     return wl
-def shieldAP(w, l, n, k):
+def shieldAP(w, l, n, k = 40):
     """claculates SE of apatures with a given wavelehtn, size of apature, number of apatures within half wavelngth and
     k=20 for slots k=40 for holes (by defult)"""
     se = k * math.log10( w / (2 * l)) - 20 * math.log10(n)
